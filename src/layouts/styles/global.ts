@@ -13,4 +13,10 @@ export const Globals = createGlobalStyle`
     display: flex;
     justify-content: center;
   }
+
+
+  a{
+    text-decoration: none;
+    color:inherit
+  }
 `;

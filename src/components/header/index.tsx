@@ -1,4 +1,4 @@
-import { MapPinLine, ShoppingCart } from "phosphor-react";
+import { MapPin, ShoppingCart } from "phosphor-react";
 
 import Logo from "../../assets/logo.svg";
 import { ContainerHeader } from "./styles";
@@ -10,12 +10,12 @@ export function Header() {
 
       <nav>
         <a href="#">
-          <MapPinLine size={22} color="#8047F8" />
+          <MapPin size={22} color="#8047F8" weight="fill" />
           São Paulo, SP
         </a>
 
-        <a>
-          <ShoppingCart size={22} />
+        <a href="#" className="shop">
+          <ShoppingCart size={22} color="#C47F17" weight="fill" />
         </a>
       </nav>
     </ContainerHeader>
