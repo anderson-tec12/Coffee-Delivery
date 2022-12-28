@@ -19,4 +19,26 @@ export const Globals = createGlobalStyle`
     text-decoration: none;
     color:inherit
   }
+
+
+  /* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #574F4D;
+  border-radius: 10px;
+  /* border: 3px solid #fff; */
+}
 `;
