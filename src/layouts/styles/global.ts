@@ -12,6 +12,7 @@ export const Globals = createGlobalStyle`
   #wrapper{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
 

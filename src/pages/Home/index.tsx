@@ -8,7 +8,7 @@ const coffeList = CoffeCatalog;
 export function Home() {
   return (
     <Container>
-      <Header />
+      {/* <Header /> */}
       <Banner />
 
       <Catalog>
