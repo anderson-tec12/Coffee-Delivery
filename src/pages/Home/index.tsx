@@ -1,4 +1,3 @@
-import { Header } from "../../components/header";
 import { Banner } from "../../components/Banner";
 import { Catalog, Container } from "./styles";
 import { CoffeCatalog } from "../../base/CoffeCatalog";
