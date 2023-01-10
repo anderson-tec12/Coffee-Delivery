@@ -11,14 +11,21 @@ import { Minus, Plus, ShoppingCart } from "phosphor-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
+import { useNavigate } from "react-router-dom";
+
 import { CheckoutConatiner } from "./styles";
 
 export function Checkout() {
+  const navigate = useNavigate();
   const { handleSubmit, register } = useForm();
   const [type, setType] = useState<"Credit" | "Debit" | "Money" | "">("");
 
   function handleSetType(value: "Credit" | "Debit" | "Money" | "") {
     setType(value);
+  }
+
+  function handleSuccess() {
+    navigate("/success");
   }
 
   return (
@@ -163,7 +170,9 @@ export function Checkout() {
                 <span>Total</span> <span>R$ 33,20</span>
               </div>
             </div>
-            <button className="confirm">Confirma Pedido</button>
+            <button className="confirm" onClick={handleSuccess}>
+              Confirma Pedido
+            </button>
           </footer>
         </main>
       </section>
