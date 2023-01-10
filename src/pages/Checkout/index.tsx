@@ -4,7 +4,10 @@ import {
   CreditCard,
   Bank,
   Money,
+  Trash,
 } from "phosphor-react";
+
+import { Minus, Plus, ShoppingCart } from "phosphor-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
@@ -95,19 +98,72 @@ export function Checkout() {
         <span className="title">Cafés selecionados</span>
 
         <main>
-          <footer>
-            <div>
+          <ul>
+            <li>
+              <img src="coffee_1.png" />
               <div>
+                <div className="title-value">
+                  <span className="name">Expresso tradicional</span>
+                  <span className="price">R$ 9,90</span>
+                </div>
+
+                <div className="actions">
+                  <div className="container-buttons">
+                    <button>
+                      <Minus size={12} weight="bold" />
+                    </button>
+                    <span className="price">1</span>
+                    <button>
+                      <Plus size={12} weight="bold" />
+                    </button>
+                  </div>
+
+                  <button className="delete">
+                    <Trash size={16} color="#8047f8" /> Remover
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <img src="coffee_1.png" />
+              <div>
+                <div className="title-value">
+                  <span className="name">Expresso tradicional</span>
+                  <span className="price">R$ 9,90</span>
+                </div>
+
+                <div className="actions">
+                  <div className="container-buttons">
+                    <button>
+                      <Minus size={12} weight="bold" />
+                    </button>
+                    <span className="price">1</span>
+                    <button>
+                      <Plus size={12} weight="bold" />
+                    </button>
+                  </div>
+
+                  <button className="delete">
+                    <Trash size={16} color="#8047f8" /> Remover
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <footer>
+            <div className="resume">
+              <div className="default">
                 <span>Total de itens</span> <span>R$ 29,70</span>
               </div>
-              <div>
+              <div className="default">
                 <span>Entrega</span> <span>R$ 3,50</span>
               </div>
-              <div>
+              <div className="total">
                 <span>Total</span> <span>R$ 33,20</span>
               </div>
             </div>
-            <button>Confirma Pedido</button>
+            <button className="confirm">Confirma Pedido</button>
           </footer>
         </main>
       </section>

@@ -176,6 +176,7 @@ export const CheckoutConatiner = styled.form`
 
           &.actived {
             border: 1px solid #8047f8;
+            background-color: #ebe5f9;
           }
         }
       }
@@ -191,6 +192,155 @@ export const CheckoutConatiner = styled.form`
       padding: 40px;
       padding-bottom: 10px;
       border-radius: 6px 44px;
+      margin-top: 14px;
+    }
+
+    .resume {
+      margin-bottom: 24px;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+
+        & + div {
+          margin-top: 12px;
+        }
+      }
+
+      .default {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color: #574f4d;
+      }
+
+      .total {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+      }
+    }
+
+    .confirm {
+      width: 100%;
+      padding: 12px 8px;
+      background: #dbac2c;
+      border-radius: 6px;
+      border: none;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 160%;
+      color: #ffffff;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 24px;
+
+      li {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 24px;
+
+        border-bottom: #e6e5e5 1px solid;
+
+        & + li {
+          padding-top: 24px;
+        }
+
+        & > div {
+          width: 100%;
+        }
+
+        img {
+          height: 64px;
+          width: 64px;
+        }
+
+        .title-value {
+          display: flex;
+          justify-content: space-between;
+
+          span.price {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 130%;
+          }
+
+          & > span.name {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: #403937;
+          }
+        }
+
+        .actions {
+          display: flex;
+          gap: 8px;
+        }
+
+        .container-buttons {
+          width: 76px;
+          border-radius: 6px;
+          background: #e6e5e5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 8px;
+
+          button {
+            color: #8047f8;
+            padding: 8px;
+            border: 0px;
+            background: none;
+            cursor: pointer;
+
+            &.price {
+              color: #000;
+              font-family: "Roboto";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 130%;
+            }
+          }
+        }
+
+        .delete {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 91px;
+          gap: 4px;
+          border-radius: 6px;
+          background: #e6e5e5;
+          border: none;
+          padding: 0 8px 0 8px;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 11px;
+          /* line-height: 160%; */
+          /* or 19px */
+
+          text-transform: uppercase;
+
+          /* Base/Text */
+
+          color: #574f4d;
+        }
+      }
     }
   }
 `;
